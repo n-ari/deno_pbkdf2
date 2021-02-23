@@ -11,7 +11,7 @@ std/node/_crypto/pbkdf2.ts compatible, not using std/node
 ## License
 
 MIT
-https://github.com/n-ari/deno_pbkdf2/LICENSE
+https://github.com/n-ari/deno_pbkdf2/blob/master/LICENSE
 
 ## Original Implementation
 
