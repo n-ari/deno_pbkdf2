@@ -2,11 +2,29 @@
 
 std/node/_crypto/pbkdf2.ts compatible, not using std/node
 
-## exported items
+## Exported items
 
 - type `NormalizedAlgorithms`
 - function `pbkdf2Sync`
 - promise function `pbkdf2`
+
+## Usage
+
+```ts
+import { pbkdf2Sync } from "https://raw.githubusercontent.com/n-ari/deno_pbkdf2/master/mod.ts";
+```
+
+## How it works
+
+Just use `Uint8Array` instead of `Buffer` of node.
+
+## Other cryptographic utils in deno, without std/node
+
+- Hash algorithms (MD5, SHA2, etc) are available in [std/hash](https://deno.land/std@0.88.0/hash).
+- Elliptic Curves (EDDSA, EDDSA) are available in [x/secp256k1](https://deno.land/x/secp256k1@1.0.5) and [x/ed25519](https://deno.land/x/ed25519@1.0.1).
+- Encrypt algorithms (AES, RSA) and HMAC are available in [x/god_crypto](https://deno.land/x/god_crypto@v1.4.9).
+  - Note that this package [doesn't seem to be considered for timing attacks](https://github.com/invisal/god_crypto/blob/master/src/math.ts).
+- There is an open issue about [implementing webcrypto APIs in deno](https://github.com/denoland/deno/issues/1891).
 
 ## License
 
